@@ -1,0 +1,24 @@
+<div class="search-body">
+
+  <div class="search-title">
+    <h2>Search Playlist</h2>
+  </div>
+
+  <div class="jukebox">
+    <div class="search-form">
+      
+    <form action='/search-playlist' method='post'>
+
+      <input type='text' name='name' placeholder="Playlist title"/>
+
+      <button type="submit">Search</button>
+    </form>
+    
+    </div>
+  
+    
+  </div>
+  {{#if errorMessage}}
+    <p>{{errorMessage}}</p>
+  {{/if}}
+</div>

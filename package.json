@@ -1,0 +1,28 @@
+{
+  "name": "jan22_project2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.2.2",
+    "morgan": "^1.10.0",
+    "querystring": "^0.2.1",
+    "serve-favicon": "^2.5.0",
+    "spotify-web-api-node": "^5.0.2",
+    "url-search-params": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

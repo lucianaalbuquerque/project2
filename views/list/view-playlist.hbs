@@ -1,0 +1,41 @@
+<div class="search-body">
+<div class="main">
+    <div class="title">
+        <h2>{{playlist.name}}</h2> 
+    </div>
+    
+    <p class="small">created by {{playlist.author.username}}</p>
+    <p>"{{playlist.description}}"</p>
+
+    <div class="authorbtns">
+        {{#ifEquals author._id user._id}} 
+            <form action="/edit/{{playlist._id}}" method="get">
+            <button type="submit">Edit</button>
+            </form>
+
+            <form action="/delete/{{playlist._id}}" method="post">
+            <button type="submit">Delete</button>
+            </form>
+        {{/ifEquals}}
+    </div>
+</div> 
+    {{!--     <p>Check the next songs:{{tracks}}</p>   --}}
+
+
+<div class="jukebox">
+<div class="search-form">
+    <h3>Add your song!</h3>
+
+    <form action="/search-songs" class="search-song" method="post">
+ 
+        <input type="text" name="search" placeholder="Look for artists or tracks">
+        <br>
+        <input type="hidden" name="spotifyId" value="{{playlist.spotifyId}}"> 
+        <input type="hidden" name="playlistId" value="{{playlist._id}}">
+
+        <button type="submit">Search</button>
+
+    </form>
+</div>
+</div>
+</div>

@@ -1,0 +1,24 @@
+<div class="search-body">
+
+    <div class="main">
+
+        <div class="title">
+            <h2>Edit</h2>
+        </div>
+
+        <form class="form" action="/edit/{{playlist._id}}" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="{{playlist.name}}">
+
+        <label for="description">Description:</label>
+        <textarea name="description" cols="30" rows="10">{{playlist.description}}</textarea>
+
+        <button type="submit">Send</button>
+        </form>
+
+    </div>
+
+    <div class="jukebox">
+    </div>
+</div>

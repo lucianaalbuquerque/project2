@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>{{title}}</title>
+      <link rel="stylesheet" href="/stylesheets/style.css" />
+   </head>
+
+<body>
+
+<div class="topnav">
+    {{#if user}}
+   <a href="/profile">Home</a>
+   <a href='/myplaylists'>My Playlists</a>
+   <a href="/search-playlist">Search</a>
+   <a href="/about">About</a>
+   <a href="/auth/logout" class="logout">Logout</a>
+   
+   {{else}}
+   <a href="/">Home</a>
+   <a href="/about">About</a>
+   <a href="/auth/login">Login</a>
+   {{/if}}
+   
+</div>
+
+    {{{body}}}
+
+</body>
+</html>

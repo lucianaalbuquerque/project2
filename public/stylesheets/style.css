@@ -1,0 +1,377 @@
+/* azul: #007fff rosa: #ff00ff roxo: #7f00ff ciano: #00ffff 
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Days One', sans-serif;
+font-family: 'Encode Sans Expanded', sans-serif;
+font-family: 'Seymour One', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Days+One&family=Encode+Sans+Expanded:wght@100;400;900&family=Seymour+One&display=swap');
+
+html {
+  margin: 0;
+ /*  background-image: url('/images/jukebox-bgblack.jpg');  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: white;
+  font-size: 18px;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  font-family: 'Days One', sans-serif;
+  font-size: 5rem;
+}
+
+.title {
+  width: 25vw;
+}
+
+.main {
+  width: 25vw;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  width: 250px;
+}
+
+.form input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.form textarea {
+  padding: 5px;
+  margin: 10px;
+}
+
+button {
+  background-color: #007fff;
+  color: white;
+  margin: 20px 2px;
+  padding: 10px;
+  width: 100px;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  border-radius: 0.70em;
+  border: 0px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+
+
+/*      topnav        */
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+}
+
+.topnav a {
+  float: left;
+  color: #ff00ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.topnav a:hover {
+  background-color: #ff00ff;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #007fff;
+  color: white;
+}
+
+/*       Create profile             */ 
+
+.profile-img {
+  width: 150px;
+  border-radius: 0.75em;
+  margin: 20px;
+}
+
+/*      View Playlist        */
+
+.authorbtns {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Login */
+
+.small {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 999px) {
+
+.search-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 4.5%;
+}
+
+.body-tracks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 15%;
+}
+
+.search-title {
+  max-width: 350px;
+}
+
+.jukebox {
+  background-image: url('/images/jukebox2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 900px; 
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.jukebox-tracks {
+  background-image: url('/images/jukebox2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 900px; 
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -55px;
+}
+
+
+.search-form input {
+  position: absolute;
+  left: 248px;
+  top: 350px;
+  width: 390px;
+  height: 35px;
+  padding: 5px;
+}
+
+.search-form button {
+  position: absolute;
+  left: 269px;
+  top: 395px;
+  width: 360px;
+  height: 35px;
+  padding: 5px;
+  background-color: #ff00ff;
+  font-size: 1.1em;
+  z-index: 10;
+}
+
+.search-form h3 {
+  position: absolute;
+  left: 317px;
+  top: 270px;
+  color: black;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+}
+
+.track {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7f00ff;
+  padding: 0 15px;
+  margin: 2px;
+  border-radius: 30px;
+}
+
+.track button {
+  background-color: #ff00ff;
+}
+
+.track a:visited, a, a:hover {
+  color: white;
+}
+
+.track p {
+  font-size: 16px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: space-between;
+}
+
+}
+
+@media (max-width: 999px) {
+  .topnav {
+    overflow: hidden;
+  }
+
+  .main {
+    width: 80%;
+  }
+
+  .search-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 4.5%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+  
+  .search-title {
+    max-width: 200px;
+  }
+  
+  .jukebox {
+    background-image: url('/images/jukebox2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-width: 400px; 
+    min-height: 270px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -35px;
+    margin-top: 50px;
+  }
+
+  .jukebox-tracks {
+    background-image: url('/images/jukebox2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-width: 400px; 
+    min-height: 270px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -20px;
+    margin-top: 50px;
+  }
+
+  .search-form input {
+    position: absolute;
+    left: 129px;
+    top: 129px;
+    width: 135px;
+    height: 16px;
+    padding: 2px;
+  }
+  
+  .search-form button {
+    position: absolute;
+    left: 142px;
+    top: 149px;
+    width: 114px;
+    height: 22px;
+    padding: 2px;
+    background-color: #ff00ff;
+  }
+
+  .search-form h3 {
+    font-size: 2em;
+    position: absolute;
+    left: 50px;
+    top: -80px;
+    color: rgb(255, 255, 255)
+  }
+
+
+  /* --------------------------------*/
+
+  .search-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+  }
+  
+  .track {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7f00ff;
+    padding: 0 15px;
+    margin: 5px;
+    border-radius: 30px;
+  }
+  
+  .track button {
+    background-color: #ff00ff;
+  }
+  
+  .track a:visited, a, a:hover {
+    color: white;
+  }
+  
+  .track p {
+    font-size: 16px;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-between;
+    
+  }
+
+}

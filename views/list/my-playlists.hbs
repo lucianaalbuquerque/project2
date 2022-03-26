@@ -1,0 +1,19 @@
+<div class="search-body">
+    <div class="main">
+        <div class="title">
+        <h2>My playlists</h2>
+        </div>
+
+        <div class="my-playlist">
+        <ul>
+            {{#each userPlaylists}}
+            <li><a href="/viewplaylist/{{this.id}}">{{this.name}}</a> - {{description}}</li>
+            {{/each}}
+        </ul>
+        </div>
+    </div>
+
+    <div class="jukebox">
+    </div>
+
+</div>

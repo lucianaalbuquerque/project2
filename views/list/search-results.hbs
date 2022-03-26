@@ -1,0 +1,32 @@
+<div class="body-tracks">
+
+    <div class="main">
+
+    <div class="title">
+    <h2>Search results</h2>
+    </div>
+
+        <div class="jukebox-tracks">
+        </div>
+
+        <div class="search-results">
+        {{#each songResults}}
+        <div class="track">
+        
+        <p><a href="{{this.href}}"> {{this.name}} </a> by: {{this.album.artists.0.name}}</p>
+        <audio controls>
+            <source src="{{this.preview_url}}" type="audio/mpeg">
+        </audio>
+        <form action="/add-songs/{{this.id}}" method="post">
+        <button type="submit">Add</button>
+        </div>
+        {{/each}}
+        {{!-- HIDDEN --}}
+        <input type="hidden" name="spotifyId" value="{{spotifyId}}">
+        <input type="hidden" name="playlistId" value="{{playlistId}}">
+        </form>
+        </div>
+    </div>
+
+</div>
+

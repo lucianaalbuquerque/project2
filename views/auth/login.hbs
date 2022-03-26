@@ -1,0 +1,30 @@
+<div class="search-body">
+
+  <div class="main">
+
+    <div class="title">
+      <h2>Login</h2>
+    </div>
+
+    <form class='form' action='/auth/login' method='post'>
+
+      <label for='username'>Username</label>
+      <input type='username' name='username' />
+
+      <label for='password'>Password</label>
+      <input type='password' name='password' />
+
+      <button type='submit'>Login</button>
+    </form>
+
+    <p class="small">If you don't have an account, <a href="/auth/signup">Signup</a> here!</p>
+    {{#if errorMessage}}
+    <p>{{errorMessage}}</p>
+    {{/if}}
+  
+  </div>
+
+  <div class="jukebox">
+  </div>
+  
+</div>
